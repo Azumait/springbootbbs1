@@ -30,4 +30,11 @@
 		title = #{title},
 		body = #{body}
 	</insert>
+
+	<update id="modify" parameterType="map">
+		UPDATE starter_bbs1
+		SET title = #{title},
+		body = #{body}
+		WHERE id = #{id}
+	</update>
 </mapper>
