@@ -18,6 +18,11 @@
 		FROM starter_bbs1
 	</select>
 
+	<delete id="delete" parameterType="long">
+		DELETE FROM starter_bbs1
+		WHERE id = #{id}
+	</delete>
+
 	<insert id="add" parameterType="map" useGeneratedKeys="true"
 		keyProperty="id">
 		INSERT INTO starter_bbs1
