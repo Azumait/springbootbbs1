@@ -7,6 +7,11 @@
 		FROM starter_bbs1 ORDER BY id DESC
 	</select>
 
+	<select id="getTotalCount" parameterType="map" resultType="int">
+		SELECT COUNT(*)
+		FROM starter_bbs1
+	</select>
+
 	<insert id="add" parameterType="map" useGeneratedKeys="true"
 		keyProperty="id">
 		INSERT INTO starter_bbs1
